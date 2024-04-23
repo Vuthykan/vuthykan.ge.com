@@ -1,0 +1,539 @@
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            a {
+    cursor: url('custom-pointer.png'), pointer;
+}
+            a:hover,
+            a:active {
+                cursor: url('custom1.png'),auto;
+            }
+            body {
+                padding-top: 70px;
+                margin: 0;
+                cursor: url('custom.png'),auto;
+            }
+            .container {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                margin: auto;
+                background-color:rgb(93, 62, 194);
+            }
+            .menu-box li:hover{
+                background-color:rgba(255, 160, 28, 0.5);
+
+            }
+            .menu-box {
+                z-index: 5;
+                position: absolute;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background: rgb(255, 255, 255);
+                float: left;
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+                display: inline;
+            }
+            .menu-box ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                
+            }
+            .menu-box ul li {
+                float: left;
+                padding: 25px;
+                color: rgb(93, 62, 194);
+                font-family: 'Glitten-Cap', sans-serif;
+                font-weight: bolder;
+                margin: auto;
+                font-size: 20px;
+                font-style: italic;
+            }
+            .content-box {
+                float:left;
+                height: 2700px;
+                width: 100%;
+            }
+
+            a:visited {
+                color: transparent;
+                color: rgb(93, 62, 194);
+            }
+            
+            .imageLogo {
+                float: left;
+                width: 200px;
+            }
+            @font-face {
+                font-family: 'Estampa';
+                src: url(Fontspring-DEMO-couturierposter-black.ttf) format('truetype')
+            }
+            @font-face {
+                font-family: 'Glitten-Cap';
+                src: url(GLITTEN\ ALL\ CAPS.ttf) format('truetype')
+            }
+            @font-face {
+                font-family: 'GLitten-Lower';
+                src: url(Glitten-Regular.ttf) format('truetype')
+            }
+            .main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+            .full-boxer{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            .box-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            .comment-box{
+                width: 600px;
+                background: white;
+                padding: 20px;
+                margin: 15px;
+                border-radius: 8px;
+                cursor: pointer;
+                box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.3);
+            }
+            .Profile {
+                display: flex;
+                align-items: center;
+            }
+            .profile-image {
+                width: 70px;
+                height: 70px;
+                box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+                overflow: hidden;
+                border-radius: 50%;
+                margin-right: 10px
+            }
+            .profile-image img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .Name {
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+            }
+            .Name strong {
+                color: black;
+                font-size: 18px;      
+            }
+            .Name span {
+                color: gray;
+                margin-top: 2px;
+            }
+            .comment p {
+                color: black;
+            }
+            .Footer {
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                color:rgba(0, 0, 0, 0.5);
+                width: 100%;
+                float: left;
+                background-color: white;
+            }
+            .Header {
+                position: relative;
+            }
+            .Picture {
+                z-index: 2;
+                display: block;
+                position: relative;
+                width: 100%;
+            }
+            .Header h1{
+                top: 150px;
+                position: absolute;
+                float: left;
+                z-index: 3;
+                margin-left: 37.5%;
+                font-family: 'Estampa', sans-serif;
+                font-size: 2rem;
+                color: white;
+                text-shadow: 2.5px 4.5px 4px #8506a1;
+
+            }
+            .Stuff h1{
+                top: 205px;
+                position: absolute;
+                float: left;
+                z-index: 3;
+                margin-left: 37.5%;
+                font-family: 'Estampa', sans-serif;
+                font-size: 5rem;
+                color: white;
+                text-shadow: 2.5px 4.5px 4px #8506a1;
+                
+            }
+            .brut p{
+                top: 350px;
+                position: absolute;
+                float: left;
+                z-index: 3;
+                margin-left: 32.5%;
+                font-family: sans-serif;
+                font-size: 1.5rem;
+                color: white;
+            }
+            .Middle h1 {
+                padding: 20px;
+                text-align: center;
+                top: 500px;
+                font-family: 'Glitten-Lower', sans-serif;
+                font-size: 2.5rem;
+                color: white;
+            }
+
+            .Flower {
+                z-index: 4;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: 10%;
+                display: block; 
+                filter: drop-shadow( 2.5px 4.5px 4px #8506a1);
+               
+            }
+            .stars {
+                padding: 10px;
+            }
+            .Input {
+                box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.3);
+                
+                width: 1235px;
+                padding: 50px;
+                margin-top: 20px;
+                margin-left: 8.125%;
+                background-color: white;
+                border-radius: 8px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .Input select {
+                padding: 10px;
+                margin: 20px;
+                border-radius: 5px;
+            }
+            .Input textarea {
+                height: 300px;
+                width: 100%;
+                border-radius: 5px;
+            }
+            .Input  input {
+                height: 30px;
+                width: 100%;
+                border-radius: 5px;
+            }
+            .Second h1 {
+                padding: 20px;
+                text-align: center;
+                top: 500px;
+                font-family: 'Glitten-Lower', sans-serif;
+                font-size: 2.5rem;
+                color: white;
+            }
+    </style>
+            <div class="container">
+                <div class="menu-box">
+                    <ul>
+                        <img src="Logo.png" class="imageLogo">
+                        <li><a style="text-decoration: none;" href="Home.html">Home</a></li>
+                        <li><a style="text-decoration: none;" href="Ingrediants.html">Ingredients</a>  </li>
+                        <li><a style="text-decoration: none;" href="SkinTypes.html">Skin Types </a></li>
+                        <li><a style="text-decoration: none;" href="Review.html"> Review </a></li>
+                        <li><a style="text-decoration: none;" href="Recommendation.html">Recommendation</a> </li>
+                        <li><a style="text-decoration: none;" href="AboutUs.html">About Us  </a>  </li>
+                        <li> 
+                            <a style="text-decoration: none;" href=https://www.youtube.com/watch?v=S_Z4B9ZTGBw> Our Youtube Channel</a>
+                        </li>
+                    </ul>
+                </div>
+            <div class="content-box">
+                <div class="Header">
+                    <img src="Romdoul.png" class="Flower" >
+                    <h1> Honest Informations </h1>
+                    <div class="Stuff">
+                        <h1>Reviews. </h1>
+                    </div>
+                    <div class="brut">
+                        <p> Here are some Reviews from our satisfied visitors.  </p>
+                    </div>
+                </div>
+                <div class="Background">
+                    <img src="Background.png" class="Picture">
+                </div>
+                <div class="Middle">
+                    <h1> What are they saying? </h1>
+                </div>
+                <section class="main">
+                    <div class="full-boxer">
+                        <div class="comment-box">
+                            <div class="box-top">
+                                <div class="Profile">
+                                    <div class="profile-image">
+                                        <img src="Oudom.jpg">
+                                    </div>
+                                    <div class="Name">
+                                        <strong>Heng Oudom</strong>
+                                        <span> @Heng Oudom</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <div class="stars">
+                                    <img src="4.png" width="25%">
+                                </div>
+                                <p>"This website gives me skibidi toilet rizz. Skibidi toilet skibidi skibidi toilet."
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment-box">
+                            <div class="box-top">
+                                <div class="Profile">
+                                    <div class="profile-image">
+                                        <img src="Bear lord.jpg">
+                                    </div>
+                                    <div class="Name">
+                                        <strong>Bear lord</strong>
+                                        <span> @TheGrizzly</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <div class="stars">
+                                    <img src="4.5.png" width="25%">
+                                </div>
+                                <p>"This website is saur good. It makes me forget that i'm a twink."
+                                </p>
+                            </div>
+                            </div>
+
+                        <div class="comment-box">
+                            <div class="box-top">
+                                <div class="Profile">
+                                    <div class="profile-image">
+                                        <img src="Lebron.png">
+                                    </div>
+                                    <div class="Name">
+                                        <strong>SweetSunshine20</strong>
+                                        <span> @My-onlysunshine21</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <section class="stars">
+                                    <img src="4.5.png" width="25%">
+                                </section>
+                                <p>"This Skin Essence Website is amazing! My skin feels so soft and smooth after following their advice!""
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment-box">
+                            <div class="box-top">
+                                <div class="Profile">
+                                    <div class="profile-image">
+                                        <img src="Auttum.jpg">
+                                    </div>
+                                    <div class="Name">
+                                        <strong>AutumnVibes22</strong>
+                                        <span> @Cartoon-lord2369</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <section class="stars">
+                                    <img src="5.png" width="25%">
+                                </section>
+                                <p>"The personalized skincare recommendations on this website are fantastic. It's like having a dermatologist in my pocket!"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment-box">
+                            <div class="box-top">
+                                <div class="Profile">
+                                    <div class="profile-image">
+                                        <img src="Sharkboi.jpg">
+                                    </div>
+                                    <div class="Name">
+                                        <strong>SharkBro</strong>
+                                        <span> @SharkBro_21</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <section class="stars">
+                                    <img src="5.png" width="25%">
+                                </section>
+                                <p>"If you're looking for reliable skincare advice, look no further. This website has everything you need to achieve healthy, glowing skin."
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment-box">
+                            <div class="box-top">
+                                <div class="Profile">
+                                    <div class="profile-image">
+                                        <img src="Teddy.jpg">
+                                    </div>
+                                    <div class="Name">
+                                        <strong>SkyBlueDreamer23</strong>
+                                        <span> @Teddy-bear</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <section class="stars">
+                                    <img src="4.5.png" width="25%">
+                                </section>
+                                <p>"This website has helped me build a skincare routine that fits my lifestyle and budget. I couldn't be happier with the results."</p>
+                            </div>
+                        </div>
+
+                        <div class="comment-box">
+                            <div class="box-top">
+                                <div class="Profile">
+                                    <div class="profile-image">
+                                        <img src="Tech.jpg">
+                                    </div>
+                                    <div class="Name">
+                                        <strong>ディック</strong>
+                                        <span> @OceanBree3401</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <section class="stars">
+                                    <img src="4.png" width="25%">
+                                </section>
+                                <p>"This Skin Essence Lotion is amazing! My skin feels so soft and smooth after using it. I totally recommend it!"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment-box">
+                            <div class="box-top">
+                                <div class="Profile">
+                                    <div class="profile-image">
+                                        <img src="Vintage.jpg">
+                                    </div>
+                                    <div class="Name">
+                                        <strong>ChipsExcitesMe521</strong>
+                                        <span> @Vintage-Millenail</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <section class="stars">
+                                    <img src="4.5.png" width="25%">
+                                </section>
+                                <p>"This Skin Essence Lotion is amazing! My skin feels so soft and smooth after using it. I totally recommend it!"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment-box">
+                            <div class="box-top">
+                                <div class="Profile">
+                                    <div class="profile-image">
+                                        <img src="SardineMast3er.jpg">
+                                    </div>
+                                    <div class="Name">
+                                        <strong>Sardine-eater_01</strong>
+                                        <span> @Ilikefish24</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <section class="stars">
+                                    <img src="4.5.png" width="25%">
+                                </section>
+                                <p>"I never realized how important skincare was until I found this website. It's made such a difference in my skin's appearance and health."
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="comment-box">
+                            <div class="box-top">
+                                <div class="Profile">
+                                    <div class="profile-image">
+                                        <img src="Yoshi.jpg">
+                                    </div>
+                                    <div class="Name">
+                                        <strong>Fat-yoshi224</strong>
+                                        <span> @Goofyahhh21</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <section class="stars">
+                                    <img src="5.png" width="25%">
+                                </section>
+                                <p>"I've been struggling with acne for years, but after implementing the suggestions from this website, my skin has cleared up significantly. Thank you!"</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+               <div class="Second">
+                <h1>Give us a Comment!</h1>
+                </div>
+                <div class="Input">
+                    <form action="/action_page.php">
+                        <label for="username">Display-Username:</label>
+                      <input type="text" id="Display-Username" name="Display-Username"><br><br>
+                      <label for="username">Username:</label>
+                      <input type="text" id="username" name="username"><br><br>
+                    <p> Give us a Star </p>
+                      <select>
+                    <option Value="1 stars"> 1 stars</option>
+                    <option Value="1.5 stars"> 1.5 stars</option>
+                    <option Value="2 stars"> 2 stars</option>
+                    <option Value="2 stars"> 2.5 stars</option>
+                    <option Value="3 stars"> 3 stars</option>
+                    <option Value="3.5 stars"> 3.5 stars</option>
+                    <option Value="4 stars"> 4 stars</option>
+                    <option Value="4.5 stars"> 4.5 stars</option>
+                    <option Value="5 stars"> 5 stars</option>
+                      </select>
+                      <p> Comment:</p>
+                      <textarea id="freeform" name="freeform" rows="4" cols="50">
+                      </textarea><br><br>
+                        <input type="submit" value="Submit">
+                      </form>
+                </div>
+            </div>
+            <div class="Footer">
+                <p> Powered by K.R. Vuthykan's Computer. ©Copyrited 2024 | All Rights Reserved |</p>
+            </div>
+    </body>
+</html>

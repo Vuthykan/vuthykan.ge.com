@@ -1,0 +1,315 @@
+<html>
+    <head>
+        <style>
+            a {
+    cursor: url('custom-pointer.png'), pointer;
+}
+            a:hover,
+            a:active {
+                cursor: url('custom1.png'),auto;
+            }
+            body {
+                padding-top: 70px;
+                margin: 0;
+                cursor: url('custom.png'),auto;
+            }
+            
+            .container {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                margin: auto;
+                background-color:rgb(97, 62, 194);
+            }
+
+            .menu-box li:hover{
+                background-color:rgba(255, 160, 28, 0.5);
+
+            }
+
+            .menu-box {
+                z-index: 5;
+                position: absolute;
+                position: fixed;
+                top:0;
+                width: 100%;
+                background: rgb(255, 255, 255);
+                float: left;
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+                display: inline;
+            }
+
+            .menu-box ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                
+            }
+
+            .menu-box ul li {
+                float: left;
+                padding: 25px;
+                color: rgb(93, 62, 194);
+                font-family: 'Glitten-Cap', sans-serif;
+                font-weight: bolder;
+                margin: auto;
+                font-size: 20px;
+                font-style: italic;
+            }
+
+            .About-us {
+                float:left;
+                height: 700px;
+                width: 100%;
+            }
+            .content-box {
+                color:rgb(255, 255, 255);
+                float:left;
+                height: 2050px;
+                width: 100%;
+            }
+
+
+            a:visited {
+                color: transparent;
+                color: rgb(93, 62, 194);
+            }
+
+            .imageLogo {
+                float: left;
+                width: 200px;  
+            }
+            .About-us img {
+            
+                width: 100%;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                border-radius: 10px;   
+                           
+            }
+            .Footer p{
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                color:rgba(0, 0, 0, 0.5);
+                width: 100%;
+                float: left;
+                background-color: white;
+            }
+            .Header h1{
+                top: 150px;
+                position: absolute;
+                float: left;
+                z-index: 3;
+                margin-left: 37.5%;
+                font-family: 'Estampa', sans-serif;
+                font-size: 2rem;
+                color: white;
+                text-shadow: 2.5px 4.5px 4px #8506a1;
+
+            }
+            .Stuff h1{
+                text-shadow: 2.5px 4.5px 4px #8506a1;
+
+                top: 150px;
+                position: absolute;
+                float: left;
+                z-index: 3;
+                margin-left: 37.5%;
+                font-family: 'Estampa', sans-serif;
+                font-size: 5rem;
+                color: white;
+                
+            }
+            .Stuff p {
+                text-shadow: 2.5px 4.5px 4px #8506a1;
+                top: 300px;
+                position: absolute;
+                float: left;
+                z-index: 3;
+                margin-left: 42.5%;
+                font-family: 'Estampa', sans-serif;
+                font-size: 1.5rem;
+                color: white;
+
+            }
+            @font-face {
+                font-family: 'Glitten-Cap';
+                src: url(GLITTEN\ ALL\ CAPS.ttf) format('truetype')
+            }
+
+            @font-face {
+                font-family: 'GLitten-Lower';
+                src: url(Glitten-Regular.ttf) format('truetype')
+            
+            }
+            @font-face {
+                font-family: 'Estampa';
+                src: url(Fontspring-DEMO-couturierposter-black.ttf) format('truetype')
+            }
+            .Skin-box {
+                margin: 1%;
+                float: left;
+                height: 4800px;
+                width: 98%;
+            }
+            .Skin-box p{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                line-height: 30px;
+                margin-left: 25%;
+                font-size: 1rem;
+                width: 50%;
+                color: white;
+            }
+            .Skin-box h1 {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: white;
+                line-height: 30px;
+                margin-left: 25%;
+                font-size: 3.5rem;
+                color: white;
+            }
+            .Skin-box {
+                padding: 40px
+            
+
+            }
+            .Skin-box  hr{
+                margin-left: 25%;
+                float: left;
+                width: 5%;
+            }
+            .Members {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin-top: 60px
+            }
+            .Members ul  {
+                margin-left: 25%;
+            }
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+                overflow-x: hidden;
+            }
+            
+            .References h1{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: white;
+                line-height: 30px;
+                margin-left: 25%;
+                font-size: 3.5rem;
+                color: white;  
+            }
+            .References hr {
+                margin-left: 25%;
+                float: left;
+                width: 5%;
+            }
+            .Up p {
+                width: 100%;
+                text-align: center;
+                margin-left: 0;
+                margin-top:75px;
+            }
+            .Link p {
+                margin-top: 0;
+                margin-left: 0;
+                width: 100%;
+                text-align: center;
+            }
+            .HR hr{
+                margin-top: 75px;
+                margin-left: none;
+                float: none;
+                width: 50%;
+                
+            }
+    </style>
+    </head>
+    <div class="container">
+                <div class="menu-box">
+                    <ul>
+                        <img src="Logo.png" class="imageLogo">
+                        <li><a style="text-decoration: none;" href="Home.html">Home</a></li>
+                        <li><a style="text-decoration: none;" href="Ingrediants.html">Ingredients</a>  </li>
+                        <li><a style="text-decoration: none;" href="SkinTypes.html">Skin Types </a></li>
+                        <li><a style="text-decoration: none;" href="Review.html"> Review </a></li>
+                        <li><a style="text-decoration: none;" href="Recommendation.html">Recommendation</a> </li>
+                        <li><a style="text-decoration: none;" href="AboutUs.html"> About Us </a></li>
+                        <li> 
+                            <a style="text-decoration: none;" href=https://www.youtube.com/watch?v=S_Z4B9ZTGBw> Our Youtube Channel</a>
+                        </li>
+                    </ul>
+                </div>
+        <div class="content-box">
+            <div class="About-us">
+            <img src="Aboutus.png">
+            <div class="Stuff">
+                <h1>ABOUT US </h1>
+                <p> For everyones skin.</p>
+            </div> 
+        <div class="Skin-box"> 
+            <p>Welcome to Skin Essence, your ultimate guide to achieving radiant, healthy skin. At Skin Essence, we believe that skincare should be simple, effective, and tailored to your unique needs. </p>
+            <p>Our journey began with a simple mission: to create skincare products that nourish, rejuvenate, and enhance your skin's natural radiance. We are committed to using only the finest ingredients, carefully selected for their proven effectiveness and gentle nature.</p>
+            <p> What sets Skin Essence apart is our dedication to quality and innovation. Each product is meticulously crafted to deliver visible results, whether you're looking to hydrate and plump your skin, reduce the appearance of fine lines and wrinkles, or simply indulge in a moment of self-care.</p>
+            <p>But Skin Essence is more than just a skincare brand. We're a community of beauty enthusiasts, skincare experts, and everyday individuals who share a passion for healthy, glowing skin. Join us on this journey to discover the essence of beautiful skin.</p>     
+            <h1> Our Team members</h1>  
+            <hr>
+            
+            <div class="Members">
+            <p>We are from 8th grade students at NGS Preah Sisowath High School, Including members such as:</p>
+                    <ul>
+                    <li> Koy Rattanak Vuthykan</li>
+                    <li> En Sokmono </li>
+                    <li> Heng Oudom </li>
+                    <li> Sambo Raksmey Sopheak </li>
+                    <li> Anna Sonita </li>
+                    <li> Heng Vanessa </li>
+                
+                    </ul>
+                    <p> You can contact Us at: </p>
+                    <p>   Email: Skinessense32@gmail.com </p>
+                    <p>    Our Mobile Number: +855 201 391 492 | +855 012 492 13 </p>
+            </div>
+            <div class="References">
+                <h1> References</h1>
+                <hr>
+                <div class="Up">
+                <p>CeraVe-Developed With Dermatologists | 2024 | What’s the Ideal Cleanser for Your Skin Type?
+                </p>
+            </div>
+            <div class="Link">
+                <p>https://www.cerave.com/skin-smarts/skincare-tips-advice/how-to-choose-face-wash-cleanser-for-skin-type</p>
+                </div>
+                </div>
+                <div class="HR">
+                <hr>
+                </div>
+                <div class="Up">
+                    <p>Good House Keeping | 2019 | 10 Best Remedies for Dry, Flaky Skin on Your Face — And How to Stop It in the First Place
+                    </p>
+                </div>
+                <div class="Link">
+                    <p>https://www.goodhousekeeping.com/beauty/anti-aging/a29993947/dry-skin-on-face-treatments-causes/</p>
+                    </div>
+                    </div>
+            </div>
+           
+           
+        
+        
+
+        </div>
+            
+        </div>
+        
+        
+    </body>
+    <div class="Footer">
+        <p> Powered by K.R. Vuthykan's Computer. ©Copyrited 2024 | All Rights Reserved |</p>
+    </div>
+</html>
