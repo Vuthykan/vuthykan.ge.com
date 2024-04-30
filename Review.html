@@ -48,13 +48,21 @@
             }
             .menu-box ul li {
                 float: left;
+                text-transform:uppercase;
                 padding: 25px;
                 color: rgb(93, 62, 194);
-                font-family: 'Glitten-Cap', sans-serif;
+                font-family: 'Sans', sans-serif; 
                 font-weight: bolder;
                 margin: auto;
                 font-size: 20px;
-                font-style: italic;
+            }
+            @font-face {
+                font-family: 'Sans';
+                src: url(Gill\ Sans\ Medium.ttf) format('truetype')
+            }
+            @font-face {
+                font-family: 'Estampa';
+                src: url(Fontspring-DEMO-couturierposter-black.ttf);
             }
             .content-box {
                 float:left;
@@ -70,18 +78,6 @@
             .imageLogo {
                 float: left;
                 width: 200px;
-            }
-            @font-face {
-                font-family: 'Estampa';
-                src: url(Fontspring-DEMO-couturierposter-black.ttf) format('truetype')
-            }
-            @font-face {
-                font-family: 'Glitten-Cap';
-                src: url(GLITTEN\ ALL\ CAPS.ttf) format('truetype')
-            }
-            @font-face {
-                font-family: 'GLitten-Lower';
-                src: url(Glitten-Regular.ttf) format('truetype')
             }
             .main {
                 display: flex;
@@ -227,35 +223,52 @@
             }
             .Input {
                 box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.3);
-                
-                width: 1235px;
+                height: 750px;
+                width: 35%;
                 padding: 50px;
-                margin-top: 20px;
-                margin-left: 8.125%;
+                margin: 20px;
+                margin: auto;
+                display: block;
                 background-color: white;
                 border-radius: 8px;
                 font-family: Arial, Helvetica, sans-serif;
             }
             .Input select {
                 padding: 10px;
-                margin: 20px;
+                background-color: rgba(0, 0, 0, 0.1);
+                border: solid 2px;
+                margin: 7.5px;
+                padding: 20px;
+                margin-left: 20px;
+                border: none;
                 border-radius: 5px;
-            }
-            .Input textarea {
-                height: 300px;
-                width: 100%;
-                border-radius: 5px;
+                border-bottom: solid 2px rgba(0, 0, 0, 0.45);
             }
             .Input  input {
-                height: 30px;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.1);
+                margin: 7.5px;
+                border: solid 2px;
+                margin-left: 0;
+                height: 50px;
                 width: 100%;
+                border: none;
                 border-radius: 5px;
+                border-bottom: solid 2px rgba(0, 0, 0, 0.45);
+            }
+            .Input textarea {
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.1);
+                border: none;
+                border-radius: 5px;
+                border-bottom: solid 2px rgba(0, 0, 0, 0.45);
+                width: 100%;
             }
             .Second h1 {
                 padding: 20px;
                 text-align: center;
                 top: 500px;
-                font-family: 'Glitten-Lower', sans-serif;
+                font-family:  sans-serif;
                 font-size: 2.5rem;
                 color: white;
             }
@@ -509,12 +522,12 @@
                 </div>
                 <div class="Input">
                     <form action="/action_page.php">
-                        <label for="username">Display-Username:</label>
-                      <input type="text" id="Display-Username" name="Display-Username"><br><br>
-                      <label for="username">Username:</label>
-                      <input type="text" id="username" name="username"><br><br>
-                    <p> Give us a Star </p>
-                      <select>
+                        <label for="username">Display-Username:</label><br>
+                      <input type="text" id="Display-Username"placeholder='Enter your Username...' name="Display-Username"><br>
+                      <label for="username">Username:</label><br>
+                      <input type="text" id="username" placeholder='@...' name="username"><br>
+                    <label> Give us a Star: </label>
+                    <select>
                     <option Value="1 stars"> 1 stars</option>
                     <option Value="1.5 stars"> 1.5 stars</option>
                     <option Value="2 stars"> 2 stars</option>
@@ -524,11 +537,14 @@
                     <option Value="4 stars"> 4 stars</option>
                     <option Value="4.5 stars"> 4.5 stars</option>
                     <option Value="5 stars"> 5 stars</option>
-                      </select>
-                      <p> Comment:</p>
-                      <textarea id="freeform" name="freeform" rows="4" cols="50">
-                      </textarea><br><br>
+                      </select><br>
+                      <label> Comment:</label><br>
+                      
+                      <textarea name="txtArea" rows="20"  placeholder="Write it here!"></textarea>
+ 
+                    <br>    
                         <input type="submit" value="Submit">
+                    <br>
                       </form>
                 </div>
             </div>

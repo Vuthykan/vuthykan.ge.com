@@ -22,6 +22,7 @@
             }
             .container .menu-box li:hover{
                 background-color:rgba(255, 160, 28, 0.5);
+                cursor: url('custom1.png'), pointer;
 
             }
             .container .menu-box {
@@ -42,13 +43,17 @@
             }
             .menu-box ul li {
                 float: left;
-                padding: 1.75%;
+                text-transform:uppercase;
+                padding: 25px;
                 color: rgb(93, 62, 194);
-                font-family: 'Glitten-Cap', sans-serif;
+                font-family: 'Sans', sans-serif; 
                 font-weight: bolder;
                 margin: auto;
                 font-size: 20px;
-                font-style: italic;
+            }
+            @font-face {
+                font-family: 'Sans';
+                src: url(Gill\ Sans\ Medium.ttf) format('truetype')
             }
             .content-box {
                 background-color: rgb(93, 62, 194);
@@ -57,6 +62,7 @@
                 width: 100%;
             }
             .Footer {
+                padding: 20px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -77,6 +83,7 @@
                 
             }
             .content-box .h1  {
+                margin-left: 2%;
                 width: 45%;
                 color: white;               
                 font-size: 30px;
@@ -122,17 +129,14 @@
                 border-radius: 10px; 
             }
             .Box2 {
-                float: right;
                 z-index: 1;
                 height: 500px;
-                width: 100%;
+                width: 95.5%;
                 bottom: 300px;
-                margin-left: 20%;
+                margin-left: auto;
+                margin-right: auto;
                 background: rgb(200,180,228,1);
                 object-fit:cover;
-                -webkit-border-radius: 20px;
-                -moz-border-radius: 20px;
-                border-radius: 10px;
                 
             }
             @font-face {
@@ -142,6 +146,11 @@
             @font-face {
                 font-family: 'GLitten-Lower';
                 src: url(Glitten-Regular.ttf) format('truetype')
+            }
+            hr {
+                border: solid 1.5px;
+                color: white;
+                width: 95%;
             }
             html, body {
                 width: 100%;
@@ -177,6 +186,7 @@
     <div class="h1">
         <h2> Why Skin Essence?</h2>
     </div>
+    <hr>
     <div class="P1">
         <p>"Skin Essence is your go-to online destination for all things related to skin health and cosmetic products tailored to your specific skin type.Our website is dedicated to providing valuable information and education to help you achieve radiant and healthy skin.Whether you're looking for skincare tips, product recommendations, or expert advice, Skin Essence is here to guide you on your journey to glowing skin."
         </p>

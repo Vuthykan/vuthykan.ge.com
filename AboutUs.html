@@ -26,7 +26,7 @@
                 background-color:rgba(255, 160, 28, 0.5);
 
             }
-
+           
             .menu-box {
                 z-index: 5;
                 position: absolute;
@@ -48,15 +48,22 @@
 
             .menu-box ul li {
                 float: left;
+                text-transform:uppercase;
                 padding: 25px;
                 color: rgb(93, 62, 194);
-                font-family: 'Glitten-Cap', sans-serif;
+                font-family: 'Sans', sans-serif; 
                 font-weight: bolder;
                 margin: auto;
                 font-size: 20px;
-                font-style: italic;
             }
-
+            @font-face {
+                font-family: 'Sans';
+                src: url(Gill\ Sans\ Medium.ttf) format('truetype')
+            }
+            @font-face {
+                font-family: 'Estampa';
+                src: url(Fontspring-DEMO-couturierposter-black.ttf) format('truetype');
+            }
             .About-us {
                 float:left;
                 height: 700px;
@@ -87,6 +94,10 @@
                 border-radius: 10px;   
                            
             }
+            @font-face {
+                font-family: 'Sans', sans-serif;
+                src: url(Gill\ Sans\ Medium.ttf);
+            }
             .Footer p{
                 padding: 20px;
                 display: flex;
@@ -104,7 +115,7 @@
                 float: left;
                 z-index: 3;
                 margin-left: 37.5%;
-                font-family: 'Estampa', sans-serif;
+                font-family: sans-serif;
                 font-size: 2rem;
                 color: white;
                 text-shadow: 2.5px 4.5px 4px #8506a1;
@@ -112,13 +123,12 @@
             }
             .Stuff h1{
                 text-shadow: 2.5px 4.5px 4px #8506a1;
-
                 top: 150px;
                 position: absolute;
                 float: left;
                 z-index: 3;
                 margin-left: 37.5%;
-                font-family: 'Estampa', sans-serif;
+                font-family:  'Estampa',sans-serif;
                 font-size: 5rem;
                 color: white;
                 
@@ -130,25 +140,13 @@
                 float: left;
                 z-index: 3;
                 margin-left: 42.5%;
-                font-family: 'Estampa', sans-serif;
+                font-family: sans-serif;
                 font-size: 1.5rem;
                 color: white;
 
             }
-            @font-face {
-                font-family: 'Glitten-Cap';
-                src: url(GLITTEN\ ALL\ CAPS.ttf) format('truetype')
-            }
-
-            @font-face {
-                font-family: 'GLitten-Lower';
-                src: url(Glitten-Regular.ttf) format('truetype')
+    
             
-            }
-            @font-face {
-                font-family: 'Estampa';
-                src: url(Fontspring-DEMO-couturierposter-black.ttf) format('truetype')
-            }
             .Skin-box {
                 margin: 1%;
                 float: left;
@@ -164,7 +162,7 @@
                 color: white;
             }
             .Skin-box h1 {
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: Arial, Helvetica, sans-serif, sans-serif;
                 color: white;
                 line-height: 30px;
                 margin-left: 25%;
@@ -174,7 +172,6 @@
             .Skin-box {
                 padding: 40px
             
-
             }
             .Skin-box  hr{
                 margin-left: 25%;
@@ -197,17 +194,12 @@
             }
             
             .References h1{
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-family: Arial, Helvetica, sans-serif, sans-serif;
                 color: white;
                 line-height: 30px;
                 margin-left: 25%;
                 font-size: 3.5rem;
                 color: white;  
-            }
-            .References hr {
-                margin-left: 25%;
-                float: left;
-                width: 5%;
             }
             .Up p {
                 width: 100%;
@@ -277,7 +269,7 @@
             </div>
             <div class="References">
                 <h1> References</h1>
-                <hr>
+            
                 <div class="Up">
                 <p>CeraVe-Developed With Dermatologists | 2024 | What’s the Ideal Cleanser for Your Skin Type?
                 </p>
